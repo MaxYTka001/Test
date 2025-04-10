@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -24,6 +26,11 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+            var client = new WebClient();
+            var responce = client.DownloadString("http://123.0.0.1:63450/api/hotels");
+            CurrentHotels = JsonConvert.DeserializeObject<List<Hotel>>(responce);
+            DataContext = this;
+            //new comment
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)

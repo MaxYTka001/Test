@@ -12,7 +12,6 @@
                 <DataGridTextColumn Binding="{Binding Id}" Header="Id" Width="auto"/>
                 <DataGridTextColumn Binding="{Binding Name}" Header="Name" Width="*"/>
                 <DataGridTextColumn Binding="{Binding CountOfStars}" Header="CountOfStars" Width="auto"/>
-                <DataGridTextColumn Binding="{Binding CountOfStars}" Header="Image" Width="auto"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

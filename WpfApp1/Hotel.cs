@@ -12,7 +12,7 @@ namespace WpfApp1
         public string Name { get; set; }
         public int CountOfStar { get; set; }
         public string CountryName { get; set; }
-        public string HotelImage { get; set; }
-
+        public string HotelImage { get; set; } 
+        //uu
     }
 }

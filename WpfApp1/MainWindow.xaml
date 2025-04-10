@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <DataGrid ItemsSource="{Binding CurrentHotels}" AutoGenerateColumns="False" SelectionChanged="DataGrid_SelectionChanged">
+        <DataGrid ItemsSource="{Binding CurrentHotels}" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Id}" Header="Id" Width="auto"/>
                 <DataGridTextColumn Binding="{Binding Name}" Header="Name" Width="*"/>
